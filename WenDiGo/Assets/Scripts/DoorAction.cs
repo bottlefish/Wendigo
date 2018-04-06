@@ -15,6 +15,10 @@ public class DoorAction : Action {
         bool isFinished = false;
         if (controller.other != null)
             isFinished = controller.other.gameObject.GetComponent<Door>().Open();
+        if(isFinished)
+        {
+            Debug.Log("AAAAA");
+        }
     }
 
 }

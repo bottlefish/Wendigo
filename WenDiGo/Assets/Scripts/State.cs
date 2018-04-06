@@ -8,6 +8,7 @@ public class State : ScriptableObject
 {
     public Action[] actions;
     public Transition[] transitions;
+    public float time;
     public void UpdateState(StateController controller)
     {
         DoActions(controller);
@@ -38,12 +39,5 @@ public class State : ScriptableObject
             }
         }
     }
-    void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+
 }
